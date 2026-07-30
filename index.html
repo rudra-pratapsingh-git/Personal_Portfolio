@@ -3,35 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            background: linear-gradient(to right, #38bdf8, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p {
-            font-size: 1.25rem;
-            color: #94a3b8;
-        }
-    </style>
+    <title>Rudra Pratap Singh | Portfolio</title>
+    <meta name="description" content="Portfolio of Rudra Pratap Singh, a B.Tech Computer Science student at VIT specializing in Full Stack Development and Machine Learning.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div>
-        <h1>Welcome to My Portfolio</h1>
-        <p>This site is currently under construction. Check back soon!</p>
-    </div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">RPS.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="name">Rudra Pratap Singh.</h1>
+            <h2 class="title">I build things for the web.</h2>
+            <p class="summary">
+                I'm a B.Tech Computer Science student at Vellore Institute of Technology (VIT) with a passion for Full Stack Development and Machine Learning. I love solving algorithmic problems and creating elegant, interactive web experiences.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/rudra-pratapsingh-git" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/rudra-pratap-singh" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                <a href="mailto:rudra.pratapsingha.rp@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#projects" class="btn primary-btn">Check out my work</a>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </header>
+
+    <!-- About & Education Section -->
+    <section id="about" class="section">
+        <h2 class="section-title"><span>01.</span> Education & Achievements</h2>
+        <div class="about-content">
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Aug 2024 – May 2028</div>
+                    <div class="timeline-content">
+                        <h3>Vellore Institute of Technology</h3>
+                        <h4>B.Tech in Computer Science and Engineering</h4>
+                        <p>CGPA: <strong>9.76/10.00</strong></p>
+                        <p class="highlight">Department Rank 1 – Computer Science & Engineering (IoT)<br>Awarded Academic Excellence Award.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Army Public School, Fatehgarh</h3>
+                        <h4>CBSE Class XII</h4>
+                        <p><strong>97.8%</strong> in PCM with Computer Science</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title"><span>02.</span> Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span>Java</span><span>C++</span><span>Python</span><span>JavaScript</span><span>C</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                    <span>HTML/CSS</span><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>EJS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Machine Learning</h3>
+                <div class="skill-tags">
+                    <span>NumPy</span><span>Pandas</span><span>scikit-learn</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Core CS & Tools</h3>
+                <div class="skill-tags">
+                    <span>Data Structures & Algorithms</span><span>OOP</span><span>OS</span><span>DBMS</span><span>Git</span><span>GitHub</span>
+                </div>
+                <p class="mt-4 text-gray"><strong>150+</strong> Algorithmic Problems Solved on LeetCode</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title"><span>03.</span> Some Things I've Built</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title"><a href="https://github.com/rudra-pratapsingh-git" target="_blank">Wanderlust</a></h3>
+                    <div class="project-description">
+                        <p>A full-stack travel accommodation platform enabling users to create, view, edit, and manage travel listings using a RESTful architecture. Features database integration, MVC structure, and server-side rendering.</p>
+                    </div>
+                    <ul class="project-tech-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/rudra-pratapsingh-git" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title"><a href="https://github.com/rudra-pratapsingh-git" target="_blank">Simon Says Memory Game</a></h3>
+                    <div class="project-description">
+                        <p>An interactive browser-based memory game. Implemented dynamic sequence generation, event-driven user interaction, score tracking, and progressive difficulty levels with responsive UI design.</p>
+                    </div>
+                    <ul class="project-tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/rudra-pratapsingh-git" target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Certifications -->
+    <section id="experience" class="section">
+        <h2 class="section-title"><span>04.</span> Experience & Certs</h2>
+        <div class="exp-container">
+            <div class="exp-card">
+                <h3>Research Paper <span>@ VIT</span></h3>
+                <p class="exp-date">2026 (Undergraduate Research)</p>
+                <ul>
+                    <li>Collaborating with faculty on interdisciplinary research studying implementation of India’s National Education Policy (NEP) within STEM institutions using VIT as a case study.</li>
+                    <li>Contributing to literature review, policy analysis, and evaluation of transdisciplinary learning frameworks.</li>
+                    <li>Status: Manuscript under preparation.</li>
+                </ul>
+            </div>
+            <div class="exp-card mt-5">
+                <h3>Machine Learning Specialization</h3>
+                <p class="exp-date">DeepLearning.AI & Stanford Online (Coursera)</p>
+                <ul>
+                    <li>Completed comprehensive training in supervised learning, unsupervised learning, neural networks, decision trees, and recommender systems.</li>
+                    <li>Implemented models using Python, NumPy, Pandas and scikit-learn.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title"><span>05.</span> What's Next?</h2>
+        <h3 class="contact-heading">Get In Touch</h3>
+        <p class="contact-desc">
+            I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        </p>
+        <p class="contact-phone"><i class="fas fa-phone-alt"></i> (+91) 7518059799</p>
+        <a href="mailto:rudra.pratapsingha.rp@gmail.com" class="btn primary-btn contact-btn">Say Hello</a>
+    </section>
+
+    <footer>
+        <p>Designed & Built by Rudra Pratap Singh</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
