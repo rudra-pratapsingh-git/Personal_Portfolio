@@ -58,4 +58,42 @@ document.addEventListener('DOMContentLoaded', () => {
             heroShapes.style.transform = `translate(-${x * 30}px, -${y * 30}px)`;
         });
     }
+
+    // Scroll Progress Bar
+    const scrollProgress = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        scrollProgress.style.width = scrolled + '%';
+    });
+
+    // Real-Time Clock
+    const clockElement = document.getElementById('live-clock');
+    const updateClock = () => {
+        const now = new Date();
+        clockElement.textContent = now.toLocaleTimeString('en-US', { hour12: false }) + ' LOCAL';
+    };
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Dynamic Greeting
+    const greetingElement = document.getElementById('dynamic-greeting');
+    const hour = new Date().getHours();
+    let greetingText = 'Good evening, my name is';
+    if (hour < 12) greetingText = 'Good morning, my name is';
+    else if (hour < 18) greetingText = 'Good afternoon, my name is';
+    greetingElement.textContent = greetingText;
+
+    // Session Tracker
+    const sessionTracker = document.getElementById('session-tracker');
+    let sessionSeconds = 0;
+    setInterval(() => {
+        sessionSeconds++;
+        const m = Math.floor(sessionSeconds / 60).toString().padStart(2, '0');
+        const s = (sessionSeconds % 60).toString().padStart(2, '0');
+        if (sessionTracker) {
+            sessionTracker.innerHTML = `<span class="pulse-dot"></span> Session Active: ${m}:${s}`;
+        }
+    }, 1000);
 });

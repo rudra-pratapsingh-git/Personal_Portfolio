@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-content">
@@ -24,14 +27,20 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="nav-right">
+                <div class="live-clock" id="live-clock">--:--:--</div>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header id="hero">
         <div class="hero-content">
-            <p class="greeting">Hi, my name is</p>
+            <div class="hero-header-top">
+                <p class="greeting" id="dynamic-greeting">Hi, my name is</p>
+                <div class="session-tracker" id="session-tracker"><span class="pulse-dot"></span> Session Active: 00:00</div>
+            </div>
             <h1 class="name">Rudra Pratap Singh.</h1>
             <h2 class="title">I build things for the web.</h2>
             <div class="summary">
